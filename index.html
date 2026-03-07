@@ -109,6 +109,12 @@
   transform: scale(1.1);
 }
 
+.full-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* change to 'cover' if you want fill */
+}
+
 
 </style>
 
@@ -127,10 +133,10 @@
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav nav ml-auto">
 	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
-	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About Us</span></a></li>
 	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
 	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
-	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact Us</span></a></li>
 	        </ul>
 	      </div>
 	    </div>
@@ -141,9 +147,13 @@
 	      	<div class="overlay"></div>
 	         <div class="container">
 	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/sau.jpg);">
+	          	<!-- <div class="one-third js-fullheight order-md-last img img-fluid" style="background-image:url(images/sau.jpg);">
 	          	 <div class="overlay"></div>
-	          	</div>
+	          	</div> -->
+				<div class="one-third js-fullheight order-md-last img img-fluid">
+  <img src="images/sau.jpg" class="full-img">
+</div>
+
 		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
 		          	<div class="text">
 		          		<span class="subheading">Hello!</span>
@@ -156,6 +166,13 @@
 
 						// Initialize the typing animation
 						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+						'Fresher',
+						'Java Full Stack Developer',
+						'Web Developer ',
+						];
 
 						// Create a function to display the typing animation for a given text
 						function playTypingAnimation(text) {
@@ -180,10 +197,11 @@
 
 						<br>
 						<br>
-			            <h2>Java Full Stack Developer !</h2>
+			            <h2>Java Full Stack Developer</h2>
 						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
 						<!-- <br> -->
-			            <p><a href="https://github.com/mrsaurabh07" class="btn btn-primary btn-outline-primary py-3 px-4">My works</a></p>
+			            <p><a href="https://www.linkedin.com/in/mrsaurabhgupta/" class="btn btn-primary py-3 px-4">Linkedin</a> 
+							<a href="https://github.com/mrsaurabh07" class="btn btn-white btn-outline-white py-3 px-4">Github</a></p>
 		            </div>
 		          </div>
 	        	</div>
@@ -212,25 +230,44 @@
 									<div class="col-sm-6 col-md-7">
 									  <div class="about-info">
 										<p><span class="title-s">Name: </span> <span>Saurabh Kumar Gupta</span></p>
-										<p><span class="title-s">Address: </span> <span>Tamkuhi Raj, Kushinagar, Uttar Pradesh 274407</span></p>
+										<p><span class="title-s">Job Role: </span> <span>Java Full Stack Developer</span></p>
+										<p><span class="title-s">Experience: </span> <span>6 Months+</span></p>
+										<p><span class="title-s">Address: </span> <span>Lucknow, India</span></p>
 									  </div>
 									</div>
 								  </div>
 
 								<div class="skill-mf">
 									<p class="title-s">Skills</p>
-									<span>JAVA</span> <span class="pull-right">60%</span>
+									<span>SQL</span> <span class="pull-right">55%</span>
 									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0"
+										<div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0"
 											aria-valuemax="100"></div>
 									</div>
 									
-									
-									<span>Full Stack Website Design & Development</span> <span class="pull-right">70%</span>
+									<span>PYTHON</span> <span class="pull-right">65%</span>
 									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0"
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
 											aria-valuemax="100"></div>
 									</div>
+									
+									<span>Java</span> <span class="pull-right">80%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<!-- <span>Statistical Analysis</span> <span class="pull-right">85%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Machine Learning</span> <span class="pull-right">80%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div> -->
 								</div>
 							</div>
 						</div>
@@ -243,17 +280,23 @@
 								<h1 class="big">About</h1>
 								<h2 class="mb-4">About Me</h2>
 								
-								<p>Hello! I’m [Saurabh Kumar Gupta], a passionate Computer Science and Engineering student excited about creating impactful software solutions. With a solid foundation in programming languages like Java, Python, and HTML,CSS,JavaScript,BootStrap, I’m constantly learning and applying new technologies to solve real-world challenges.
+								<!-- <p>With over 5 years of comprehensive experience in the field of data science & analytics, accompanied by a bachelor's degree in engineering. 
+									Proficient in data analysis, statistical analysis, hypothesis testing, customer behaviour analysis, &amp; machine learning. 
+									Demonstrated success in leading impactful projects and providing effective mentorship.</p> -->
+									<p>Hello! I’m [Saurabh Kumar Gupta], a passionate Computer Science and Engineering student excited about creating impactful software solutions. With a solid foundation in programming languages like Java, Python, and HTML,CSS,JavaScript,BootStrap, I’m constantly learning and applying new technologies to solve real-world challenges.
 
 									I enjoy exploring fields like web development, data structures, and algorithms, and have worked on various academic projects, including [Toll Tax Management System | E-Commerce Website]. I’m eager to learn more about cloud computing, machine learning, as I build my skills to contribute to innovative tech solutions.
 									
 									I am always enthusiastic about collaborative projects, hackathons, and opportunities that push my creativity and coding abilities.</p>
+
 								<ul class="about-info mt-4 px-md-0 px-2">
 									<li class="d-flex"><span>Profile:</span> <span>Java Full Stack Developer</span></li>
-									<li class="d-flex"><span>Education:</span> <span>B.Tech In Computer Science & Engineering</span></li>
+									<!-- <li class="d-flex"><span>Domain:</span> <span>Retail, Ecommerce, BFSI &amp; Digital M</span></li> -->
+									<li class="d-flex"><span>Education:</span> <span>B.Tech in Computer Science and Engineering</span></li>
 									<li class="d-flex"><span>Language:</span> <span>English, Hindi</span></li>
-									<li class="d-flex"><span>Other Skills:</span> <span>HTML, CSS, JavaScript, BootStrap, JAVA</span></li>
-									<li class="d-flex"><span>Interest:</span> <span>Traveling, Travel Photography,Playing Games</span></li>
+									<!-- <li class="d-flex"><span>BI Tools:</span> <span>Microsoft Power BI, Looker &amp; Tableau</span></li> -->
+									<li class="d-flex"><span>Other Skills:</span> <span>Git, Github, Postman, Eclipse, Intellij IDEA, STS</span></li>
+									<li class="d-flex"><span>Interest:</span> <span>Traveling, Travel Photography, Playing games</span></li>
 									
 								</ul>
 							</div>
@@ -263,9 +306,10 @@
 						<div class="counter-wrap ftco-animate d-flex mt-md-3">
 							<div class="text">
 								<p class="mb-4">
-									<span class="number" data-number="8">0</span> <span>+</span>
-									<span>Fronted Projects completed</span>
+									<span class="number" data-number="14">0</span> <span>+</span>
+									<span>&nbsp; Projects completed</span>
 								</p>
+								<p><a href="https://www.linkedin.com/in/mrsaurabhgupta/" class="btn btn-primary py-3 px-3">LinkedIn</a></p>
 							</div>
 						</div>
 					</div>
@@ -283,9 +327,54 @@
           <div class="col-md-10 heading-section text-center ftco-animate">
           	<h1 class="big big-2">Resume</h1>
             <h2 class="mb-4">Resume</h2>
-            <p>Motivated and detail-oriented Computer Science and Engineering student with a strong foundation in programming, software development, and problem-solving. Proficient in languages such as Java, Html, Css, Javascript,& Bootstrap with hands-on experience in data structures, algorithms, and web development. Eager to apply theoretical knowledge in practical settings through internships, collaborative projects, and innovative tech solutions. Enthusiastic about learning emerging technologies like AI, cloud computing, and full-stack development to contribute to the ever-evolving tech industry.</p>
+            <!-- <p>Seasoned Senior Data Analyst with 5+ years of experience driving business strategies through data-driven insights. Proven expertise in data science, statistical analysis, machine learning algorithms and project management.</p> -->
+			 <p>Motivated and detail-oriented Computer Science and Engineering student with a strong foundation in programming, software development, and problem-solving. Proficient in languages such as Java, Html, Css, Javascript,& Bootstrap with hands-on experience in data structures, algorithms, and web development. Eager to apply theoretical knowledge in practical settings through internships, collaborative projects, and innovative tech solutions. Enthusiastic about learning emerging technologies like AI, cloud computing, and full-stack development to contribute to the ever-evolving tech industry.</p>
           </div>
         </div>
+
+		<div class="row">
+			<h1 class="big-4">Experience</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+		<div class="row">
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2025 March - Present</span>
+						<h2>Java Full Stack Trainee</h2>
+						<span class="position">Softpro Group of Comapnies, Lucknow</span>
+						<p class="mt-4">Worked on Java Full Stack development during training at Softpro Group of Companies, gaining hands-on experience in Java, Spring Boot, HTML, CSS, JavaScript, and MySQL. Developed web-based projects and improved problem-solving, debugging, and software development skills. 
+							<ul>
+								<li>Developed web applications using Java, Spring Boot, HTML, CSS, JavaScript, and MySQL, focusing on clean code and responsive UI design.</li>
+								<li>Gained hands-on experience in backend development, database integration, and debugging, while working on real-world projects during training.</li>
+								<!-- <li>Designed and executed A/B tests, performed rigorous statistical analysis. Led to 20% MoM increase in the conversion rate.</li> -->
+							</ul>
+						</p>
+					</div>
+
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2024 March - May 2024</span>
+						<h2>Java Technology Summer Training</h2>
+						<span class="position">Sunrise Infotech Solution</span>
+						<p class="mt-4">Completed Java Summer Training focused on Core Java, OOP concepts, JDBC, and MySQL, with hands-on experience in building basic Java applications and understanding backend development. 
+							<ul>
+								<!-- <li>Performed in-depth market research and analysis to create online pages. Resulted in ~100% website growth and 30% increase in conversion rate YoY.</li> -->
+								 <li>Learned core Java concepts including OOP principles, collections, exception handling, and basic data structures.</li>
+								 <li>Developed small applications using Java, JDBC, and MySQL to understand database connectivity and backend logic.</li>
+								 <li>Practiced problem-solving and debugging through coding exercises and mini projects.</li>
+								 <!-- <li>Gained understanding of web technologies (HTML, CSS, JavaScript) and their integration with Java applications.</li> -->
+								<!-- <li>Delivered multiple training and mentorship sessions on analytical tools like SQL, MS Excel, Power BI, Tableau and Python.</li>
+								<li>Performed migration and enhancements for merchandising dashboard, involved data integration and its feature improvement.</li> -->
+							</ul>
+						</p>
+					</div>
+
+				</div>
+			</div>
 
 		<br>
 		<br>
@@ -300,27 +389,30 @@
     			<div class="col-md-6">
     				<div class="resume-wrap ftco-animate">
     					<span class="date">2022-2025</span>
-    					<h2>B.Tech In Computer Science & Engineering</h2>
-    					<span class="position">B.N.College Of Engineering & Technology</span>
-    					<p class="mt-4">7.63 CGPA</p>
-    				</div>
-    			</div>
-
-				<div class="col-md-6">
-    				<div class="resume-wrap ftco-animate">
-    					<span class="date">2019-2022</span>
-    					<h2>Diploma In Electrical Engineering</h2>
-    					<span class="position">G.C.R.G group of Polytechnic College</span>
-    					<p class="mt-4">73.96%</p>
+    					<h2>B.Tech in Computer Science and Engineering</h2>
+    					<span class="position">BN College of Engineeing and Technology, Lucknow</span>
+    					<p class="mt-4">Grade: First Division with Distinction</p>
+						<p class="mt-4">CGPA: 7.63/10</p>
     				</div>
     			</div>
 
     			<div class="col-md-6">
     				<div class="resume-wrap ftco-animate">
-    					<span class="date">2017</span>
+    					<span class="date">2019-2022</span>
+    					<h2>Diploma in Electrical Engineering</h2>
+    					<span class="position">G C R G Group of Institutions</span>
+    					<p class="mt-4">Grade: First Division</p>
+						<p class="mt-4">Percentage: 74%</p>
+    				</div>
+				</div>
+
+				<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2016 - 2017</span>
     					<h2>High School</h2>
-    					<span class="position">Don Bosco School Mahadeopuram Gorakhpur</span>
-    					<p class="mt-4">9.4 CGPA</p>
+    					<span class="position">Don Bosco School Mahadeopuram, Gorakhpur</span>
+    					<p class="mt-4">Grade: First Division</p>
+						<p class="mt-4">CGPA: 9.4/10</p>
     				</div>
 				</div>
     		</div>
@@ -332,7 +424,6 @@
     		</div>
     	</div>
     </section>
-
    
 
     <section class="ftco-section" id="project-section">
